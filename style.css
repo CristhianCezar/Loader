@@ -6,24 +6,24 @@ body {
   align-items: center;
 }
 
-.gegga {
+.wheel {
   width: 0;
 }
 
-.snurra {
-  filter: url(#gegga);
+.spinner {
+  filter: url(#wheel);
 }
 
-.stopp1 {
+.stop1 {
   stop-color: #f700a8;
 }
 
-.stopp2 {
+.stop2 {
   stop-color: #ff8000;
 }
 
-.halvan {
-  animation: Snurra1 10s infinite linear;
+.the-half {
+  animation: spinner 10s infinite linear;
   stroke-dasharray: 180 800;
   fill: none;
   stroke: url(#gradient);
@@ -31,8 +31,8 @@ body {
   stroke-linecap: round;
 }
 
-.strecken {
-  animation: Snurra1 3s infinite linear;
+.stretch {
+  animation: spinner 3s infinite linear;
   stroke-dasharray: 26 54;
   fill: none;
   stroke: url(#gradient);
@@ -40,14 +40,14 @@ body {
   stroke-linecap: round;
 }
 
-.skugga {
+.shadow {
   filter: blur(5px);
   opacity: 0.3;
   position: absolute;
   transform: translate(3px, 3px);
 }
 
-@keyframes Snurra1 {
+@keyframes spinner {
   0% {
     stroke-dashoffset: 0;
   }
